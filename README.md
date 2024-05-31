@@ -1,4 +1,4 @@
-# neos-manual-install
+# Comma2-manual-install (NEOS)
 
 Stuck here? You're not alone.
 
@@ -6,7 +6,7 @@ Stuck here? You're not alone.
 
 This repo contains a downloadable, executable script that bypasses NEOS Setup to install openpilot. This appears to be necessary as of late February 2024; the reason is not yet understood. This script is made specifically for NEOS devices (EON, comma two). This is NOT designed or needed for AGNOS devices such as comma three or threex.
 
-# Basic Usage
+# Official OpenPilot for Comma 2
 
 Installing stock openpilot 0.8.13.1.
 
@@ -21,11 +21,16 @@ Installing stock openpilot 0.8.13.1.
     * Your browser may have saved the id_rsa file as "id_rsa.txt" or "id_rsa.pem"
 7. Once connected, paste this command into your SSH session: `curl -Ls https://tinyurl.com/bdhse3xn | bash -s`
 
-# Advanced Usage (Installing a Custom Fork)
+# Tinkla's OpenPilot for Comma 2
 
 Let's be honest, we're here because you were tempted to uninstall openpilot and try some other random fork!
 The installer script in Step 7 above will accept two optional parameters, a GitHub repository owner and a branch name. This mirrors the format used by comma's install generator.
 
-For a custom install URL such as: `installer.comma.ai/ErichMoraga/813`
+For a custom install URL such as: `installer.comma.ai/BogGyver/tesla_unity_releaseC2`
 
-Instead use this command: `curl -Ls https://tinyurl.com/bdhse3xn | bash -s ErichMoraga 813`
+Instead use this command: `curl -Ls https://tinkla.timnijland.nl/c2setup.sh | bash -s BogGyver tesla_unity_releaseC2`
+
+
+# Credits
+
+A big thank you to the official solution from: [jyoung8607](https://github.com/jyoung8607/neos-manual-install) I just copied it to make it easier for fellow Tinkla users!
